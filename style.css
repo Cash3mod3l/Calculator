@@ -1,92 +1,75 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    height: 100vh;
-    display: grid;
+	font-size: 22px;
+	font-family: monospace;
 }
 
-.container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
+#container {
+	display: grid;
+	justify-content: center;
+	margin: 15% auto;
 }
 
-.calc {
-    border: 1px solid black;
-    width: 400px;
-    height: 525px;
-    border-radius: 20px;
-    background-color: rgb(32 32 32);
+#calc {
+	border: 1px solid gray;
+	box-shadow: 1px -1px 10px 0px #cbc6c6;
+	width: 350px;
+	height: 470px;
+	border-radius: 7px;
 }
 
-.display {
-    padding: 10px;
-    height: 105px;
-    display: grid;
-    justify-items: end;
-    align-items: end;
-    margin-bottom: 20px;
+#display {
+	height: 100px;
 }
 
-.display p {
-    text-align: right;
-    font-size: 4rem;
-    margin: 0;
-    color: white;
+#buttonBlock {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	grid-gap: 7px;
+	margin-top: 15%;
 }
 
-.display span {
-    color: white;
-    font-size: 100px;
+.btn {
+	width: 55px;
+	height: 55px;
+	border-radius: 30%;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	line-height: 45px;
+	color: black;
 }
 
-.buttons {
-    display: grid;
-    grid-template-areas: "ac plus-minus percent division"
-    "seven eigth nine multi"
-    "four five six minus"
-    "one two three plus"
-    "zero zero dot equal";
-    grid-gap: 7px;
-    justify-items: center;
-    margin: 10px;
+.btn-white {
+	color: rgb(24, 24, 24);
+	background-color: rgb(167, 166, 166);
 }
 
-.btn { 
-    width: 60px;
-    height: 60px;
-    background: black;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    user-select: none;
-    color: white;
+.btn-white:hover {
+	transition: 0.3s;
+	filter: brightness(120%);
 }
 
-.btn.zero {
-    grid-area: zero;
-    width: 100%;
-    border-radius: 34px;
+.btn-orange {
+	background-color: orange;
+	color: rgb(24, 24, 24);
 }
 
-.btn:hover {
-    filter: brightness(120%);
+.btnAction:hover {
+	transition: 0.3s;
+	filter: brightness(120%);
 }
 
-
-.btn:active {
-    filter: brightness(90%);
+.btn-gray {
+	background-color: #c1bfbf;
 }
 
-.btn.bg-grey {
-    background: gray;
-}
-
-
-.btn.bg-orange {
-    background: orange;
+.btnNumber:hover {
+	transition: 0.3s;
+	filter: brightness(120%);
 }
